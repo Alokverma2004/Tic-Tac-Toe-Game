@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: cadetblue;
+    height: auto;
+    padding: 2.2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1vh black;
+}
+h1{
+    font-size: 40px;
+    font-family: cursive;
+    color: cornsilk;
+}
+h2{
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: 600;
+    color: blue;
+}
+h3{
+    font-size: 20px;
+    color: black;
+    font-family: cursive;
+}
+.content{
+    display: grid;
+    grid-template-rows: repeat(1, 82vh);
+    grid-template-columns: repeat(2,50vw);
+    background: aquamarine;
+}
+.gamecontainer{
+    display: grid;
+    grid-template-rows: repeat(3, 12vh);
+    grid-template-columns: repeat(3,12vh);
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    border-right: .25vh solid rgb(0, 0, 0);
+    border-bottom:.25vh solid rgb(0, 0, 0) ;
+    background-color: rgb(223, 133, 215);
+}
+.boxes{
+    border: solid 3px black;
+}
+.boxes:hover{
+    background-color: rgb(139, 233, 186);
+}
+.text{
+    font-size: 8.5vh;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+
+}
+.gameinfo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-top: 15vh;
+    align-items: center;
+    border-left: .25vh solid rgb(0, 0, 0);
+    border-bottom:.25vh solid rgb(0, 0, 0) ;
+}
+.heading{
+    font-size: 4vh;
+    font-weight: 600;
+    font-family: cursive;
+    padding: 1vh;
+    color: rgb(0, 0, 0);
+    text-decoration-line: underline;
+    text-underline-position: under;
+}
+
+.p1{
+    font-size: 2.5vh;
+    font-weight: 600;
+    padding: 2vh;
+    border: solid 0px;
+    border-radius: 10px;
+    line-height: 8vh;
+    background-color: rgb(235, 80, 214);
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.p2{
+    font-size: 2.5vh;
+    font-weight: 600;
+    padding: 2vh;
+    border: solid 0px;
+    border-radius: 10px;
+    line-height: 8vh;
+    background-color: rgb(224, 126, 96);
+    font-family: 'Courier New', Courier, monospace;
+}
+.br-0{
+    border-right: 0px;
+}
+.bl-0{
+    border-left: 0px;
+}
+.bt-0{
+    border-top: 0px;
+}
+.bb-0{
+    border-bottom: 0px;
+}
+.otherinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info{
+    font-size: 3.5vh;
+    font-weight: 600;
+    padding: 2.5vh;
+    border: solid 0px;
+    border-radius: 3px;
+    line-height: 8vh;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.reset{
+    font-size: 3.5vh;
+    font-weight: 600;
+    padding: .5vh 4.5vh;
+    border: solid 5px rgb(0, 0, 0);
+    border-radius: 9px;
+    background-color: rgb(94, 50, 50);
+    cursor: pointer;
+    font-family:cursive;
+    color: aqua;
+}
+
+/* to make the game responsive */
+@media only screen and (max-width: 800px) {
+    .navbar{
+        display: none;
+    }
+    .content{
+        display: grid;
+        grid-template-rows: repeat(2, 50vh);
+        grid-template-columns: repeat(1,100vw);
+        background: aquamarine;
+    }
+    .heading{
+        font-size: 2.5vh;
+        font-family: cursive;
+        text-decoration-line: underline;
+        text-underline-position: under;
+    }
+    .gamecontainer{
+        display: grid;
+        grid-template-rows: repeat(3, 8vh);
+        grid-template-columns: repeat(3,8vh);
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        border-bottom:.5vh solid rgb(0, 0, 0) ;
+        background-color: rgb(223, 133, 215);
+    }
+    .info{
+        font-size: 2.5vh;
+        padding: .5vh;
+        line-height: 6vh;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .reset{
+        font-size: 2.5vh;
+        padding: .5vh 2.5vh;
+        border: solid 5px rgb(0, 0, 0);
+        border-radius: 9px;
+        background-color: rgb(94, 50, 50);
+        cursor: pointer;
+        font-family:cursive;
+        color: aqua;
+    }
+    .text{
+        font-size: 5.5vh;
+        font-family: cursive;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .players{
+        display: none
+    }
+  }
